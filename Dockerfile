@@ -14,7 +14,7 @@ ENV NODE_ENV=production
 ENV DB_HOST=item-db
 
 # Install dependencies
-RUN npm install --production && npm run build
+RUN npm install --production --unsafe-perm && npm run build
 
 # Mengexpose port 8080
 EXPOSE 8080

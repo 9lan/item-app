@@ -17,7 +17,7 @@ docker images | grep item-app
 docker tag item-app:v1 $username/item-app:v1
 
 # Login ke ghcr.io
-docker login -u $username -p $password
+docker login -u $username -p $password ghcr.io
 
 # Mengunggah image ke ghcr.io
 docker push ghcr.io/$username/item-app:v1
